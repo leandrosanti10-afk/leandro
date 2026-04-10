@@ -170,6 +170,38 @@
             background: linear-gradient(135deg, #0056b3, #003d80);
             transform: translateY(-1px);
         }
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            max-width: 900px;
+            margin: 0 auto 30px;
+            padding: 0;
+            list-style: none;
+        }
+        .footer-links li {
+            flex: 1 1 calc(20% - 10px);
+            min-width: 160px;
+            max-width: 220px;
+        }
+        .footer-links a {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 12px 14px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
+            transition: transform 0.18s ease, background 0.2s ease;
+        }
+        .footer-links a:hover {
+            background: linear-gradient(135deg, #0056b3, #003d80);
+            transform: translateY(-1px);
+        }
         img {
             display: block;
             margin: 0 auto;
