@@ -1,12 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://leandrosanti10-afk.github.io/leandro/</loc>
+    <loc>https://leandrosanti10-afk.github.io/leandro/index.html</loc>
     <lastmod>2026-04-10</lastmod>
     <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://leandrosanti10-afk.github.io/leandro/index.html</loc>
+    <loc>https://leandrosanti10-afk.github.io/leandro/pais_sede.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://leandrosanti10-afk.github.io/leandro/Participacoes.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://leandrosanti10-afk.github.io/leandro/quiz.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://leandrosanti10-afk.github.io/leandro/sua_convocacao.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://leandrosanti10-afk.github.io/leandro/titulos.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://leandrosanti10-afk.github.io/leandro/uniformes.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://leandrosanti10-afk.github.io/leandro/artilheiros.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://leandrosanti10-afk.github.io/leandro/campeoes.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://leandrosanti10-afk.github.io/leandro/curiosidades_recordes.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://leandrosanti10-afk.github.io/leandro/dreamteam_campeoes.html</loc>
     <lastmod>2026-04-10</lastmod>
     <priority>0.8</priority>
   </url>
