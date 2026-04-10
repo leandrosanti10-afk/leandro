@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #222;
+            line-height: 1.75;
+            font-size: 16px;
+            text-rendering: optimizeLegibility;
+        }
+        p, dd, li, label, td {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.75;
+            font-size: 1rem;
+        }
+        ul, ol {
+            max-width: 860px;
+            margin: 0 auto 20px;
+            padding-left: 1.35em;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        strong, b {
+            color: #003d80;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #007bff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            background-color: #007bff !important;
+            color: white !important;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        dl {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        dt {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        dd {
+            margin: 0 0 15px 0;
+            line-height: 1.6;
+            color: #333;
+            font-size: 16px;
+        }
+        h3 {
+            font-size: 1.6rem;
+            color: #003d80;
+            margin: 28px auto 14px;
+            padding: 12px 18px;
+            max-width: 860px;
+            background: linear-gradient(135deg, rgba(0,123,255,0.13), rgba(0,86,179,0.08));
+            border: 1px solid rgba(0,123,255,0.24);
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            letter-spacing: 0.02em;
+        }
+        .contato-link {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #007bff;
+            display: inline-block;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .contato-link:hover {
+            background-color: #f8f9fa;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.14);
+            padding: 4px;
+            border-radius: 12px;
+            background-color: white;
+        }
+        a.contato-link img {
+            display: inline-block;
+            margin: 0;
+            vertical-align: middle;
+            border: none;
+            padding: 0;
+        }
+        .voltar-link {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: white;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 0;
+            transition: background-color 0.3s, transform 0.2s ease;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+        .voltar-link:hover {
+            background-color: #f0f8ff;
+            transform: translateY(-1px);
+        }
+        a[href^="#"] {
+            display: inline-block;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
+            transition: transform 0.18s ease, background 0.2s ease;
+            margin: 4px 0;
+        }
+        a[href^="#"]:hover {
+            background: linear-gradient(135deg, #0056b3, #003d80);
+            transform: translateY(-1px);
+        }
+        .top-right-flag {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            max-width: 80px;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <img src="imagens/brasil.png" alt="Bandeira do Brasil" class="top-right-flag" width="80" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <br><br><br>
+    <h1>BRASIL COMO PAÍS SEDE DE COPAS DO MUNDO</h1>
+    <dl>
+        <dt>Breve resumo do tema abordado:</dt>
+        <br>
+        <dd>Durante esses quase 1 século de Copa do Mundo a seleção canarinho já foi o País Sede em 1950 e 2014, nós separamos pontos importantes dessas copas.</dd>
+        <br>
+    </dl>
+    <br><br>
+    <a href="INDEX.html" class="voltar-link">Voltar ao Início</a>
+    <br><br>
+    
+            <li><a href="#50">Copa de 1950</a></li>
+            <li><a href="#est50">Estádios Copa de 1950</a></li>
+            <li><a href="#14">Copa de 2014</a></li>
+            <li><a href="#est14">Estádios Copa de 2014</a></li> 
+    <br><br><br>  
+
+    <h2 id="50" style="color:blue;">1950: A Construção do Gigante e a Simplicidade</h2>
+    <li>Naquela época, o Brasil queria provar que era a "potência do futuro". A organização foi focada em centralizar tudo no Rio de Janeiro.</li>
+    <br>
+    <ul type="disc">
+        <li>Investimento e Engenharia: O grande investimento foi o Maracanã. Ele foi construído em apenas 22 meses. Para a época, foi um desafio de engenharia civil sem precedentes no país. O estádio ainda estava com andaimes e cheiro de cimento fresco no dia da abertura.</li>
+        <br>
+        <li>Organização: A tecnologia de comunicação era o rádio. Milhões de brasileiros acompanharam a Copa pelas ondas curtas, e o "atraso" da informação criava uma mística sobre os jogos.</li>
+        <br>
+        <li>O Formato: Foi a única edição da história que não teve uma "final" única eliminatória. As quatro melhores seleções (Brasil, Uruguai, Espanha e Suécia) jogaram um quadrangular final. Quem somasse mais pontos seria o campeão.</li>
+        <br>
+        <li>A Campanha: O Brasil encantou o mundo com um futebol ofensivo, goleando a Suécia por 7 a 1 e a Espanha por 6 a 1. A seleção chegou ao último jogo contra o Uruguai precisando apenas de um empate para ser campeã.</li>
+        <br>
+        <li>O "Maracanazo": No dia 16 de julho, diante de um público estimado em 200 mil pessoas, o Brasil saiu na frente com um gol de Friaça. Porém, o Uruguai virou o jogo para 2 a 1 com gols de Schiaffino e Ghiggia. O silêncio que tomou conta do estádio após o apito final ficou marcado na história como o "Maracanazo". O Brasil terminou como vice-campeão e abandonou o uso do uniforme branco para sempre.</li>
+        <br>
+        <li>Curiosidade da Copa:</li>
+        <ul type="square">
+            <li>A Desistência da Índia (O Mito dos Pés Descalços): Uma das lendas mais famosas é que a Índia desistiu porque a FIFA proibiu os jogadores de jogarem descalços. Embora a Índia realmente jogasse assim nas Olimpíadas de 1948, o motivo real da desistência foi a falta de orçamento para a viagem e o fato de a Federação Indiana valorizar mais as Olimpíadas do que a Copa na época. Como resultado, o grupo do Brasil ficou com apenas 3 seleções.</li>
+            <br>
+            <li>O Uniforme "Amaldiçoado": O Brasil jogou toda a Copa de 1950 de branco com gola azul. Após a derrota na final, a cor foi considerada "agourenta" (deu azar). Foi então que o jornal Correio da Manhã lançou o concurso para o novo uniforme, vencido pelo design da "Amarelinha" que usamos até hoje. O Brasil nunca mais vestiu branco em uma final de Copa.</li>
+            <br>
+            <li>Jogadores "Operários": Diferente dos craques multimilionários de 2014 e 2026, em 1950 muitos jogadores ainda tinham empregos comuns. O goleiro reserva do Brasil, por exemplo, era funcionário público. A preparação era rígida, mas os recursos médicos e nutricionais eram quase inexistentes comparados aos softwares de performance que você estuda hoje.</li>
+            <br>
+            <li>O Maracanã Inacabado: No dia da abertura, o Maracanã ainda tinha andaimes, áreas sem pintura e muito entulho de construção nos arredores. O estádio só foi "finalizado" de verdade muitos anos depois, mas a pressão para realizar o evento era tão grande que a FIFA autorizou os jogos mesmo com o canteiro de obras visível.</li>
+        </ul>
+    </ul>
+    <br>
+    <h2 id="est50" style="color:blue;">Estádios da Copa de 1950</h2>
+    <img src="imagens/maracana50.jpg" width="400">
+    <ul>
+        <li>Estádio do Maracanã (Rio de Janeiro)</li>
+        <li>Nome Oficial: Estádio Municipal do Rio de Janeiro</li>
+        <li>Capacidade na época: Cerca de 200.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/pacaembu50.jpg" width="400">
+    <ul>
+        <li>Estádio do Pacaembu (São Paulo)</li>
+        <li>Nome Oficial: Estádio Paulo Machado de Carvalho</li>
+        <li>Capacidade na época: Cerca de 70.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/independencia50.jpg" width="400">
+    <ul>
+        <li>Estádio Independência (Belo Horizonte)</li>
+        <li>Nome Oficial: Estádio Sete de Setembro</li>
+        <li>Capacidade na época: Cerca de 30.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/eucaliptos50.jpg" width="400">
+    <ul>
+        <li>Estádio dos Eucaliptos (Porto Alegre)</li>
+        <li>Nome Oficial: Estádio Ildefonso Pinto</li>
+        <li>Capacidade na época: Cerca de 30.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/vilacapanema50.jpg" width="400">
+    <ul>
+        <li>Estádio da Vila Capanema (Curitiba)</li>
+        <li>Nome Oficial: Estádio Durival Britto e Silva</li>
+        <li>Capacidade na época: Cerca de 15.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/ilhadoretiro50.jpg" width="400">
+    <ul>
+        <li>Estádio da Ilha do Retiro (Recife)</li>
+        <li>Nome Oficial: Estádio Adelmar da Costa Carvalho</li>
+        <li>Capacidade na época: Cerca de 20.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <br>
+
+    <h2 id="14" style="color:blue;">2014: O Padrão FIFA e os Contrastes Sociais</h2>
+    <li>Em 2014, o cenário foi muito mais complexo, envolvendo política, tecnologia de ponta e grandes debates públicos.</li>
+    <br>
+    <ul type="disc">
+        <li>Investimentos Bilionários: O custo total foi estimado em cerca de R$ 25 bilhões. O foco não foi apenas estádios (as "Arenas Padrão FIFA"), mas também aeroportos e obras de mobilidade urbana (BRTs e VLTs), muitas das quais não ficaram prontas a tempo.</li>
+        <br>
+        <li>A "Rejeição" e os Protestos: Diferente de 1950, houve uma forte onda de protestos antes da bola rolar. O slogan "Não vai ter Copa" ficou famoso em 2013 durante a Copa das Confederações. A população questionava por que investir tanto em estádios e não em "hospitais e escolas padrão FIFA".</li>
+        <br>
+        <li>Tecnologia e Logística: Foi a Copa da conectividade. Pela primeira vez, o Brasil instalou redes 4G robustas e tecnologia de linha de gol (sensores para saber se a bola entrou). A logística de transporte das seleções foi um desafio de software e planejamento, coordenando voos fretados em um país de dimensões continentais.</li>
+        <br>
+        <li>O Clima: Fora de campo, a Copa foi um sucesso de público e integração. Milhares de estrangeiros lotaram as "Fan Fests" e as ruas brasileiras. Foi batizada informalmente de "Copa das Copas" pelo alto número de gols e pela qualidade dos jogos.</li>
+        <br>
+        <li>A Campanha Brasileira: O Brasil, comandado por Luiz Felipe Scolari (o técnico do Penta), avançou em primeiro no seu grupo. Passou pelo Chile nos pênaltis nas oitavas e venceu a Colômbia nas quartas, mas perdeu seu principal jogador, Neymar, por lesão, e o capitão Thiago Silva por suspensão. Na Semifinal acabou sendo marcado o nosso maior vexame dentro da nossa própria casa, o famoso 7x1 contra a Alemanha.</li>
+        <br>
+        <li>Curiosidades da Copa</li>
+        <ul type="square">
+            <li>O "Mineiraço": Na semifinal, em Belo Horizonte, o Brasil sofreu sua derrota mais pesada: 7 a 1 contra a Alemanha. Os alemães marcaram cinco gols em apenas 29 minutos de jogo. O Brasil terminou a competição em 4º lugar, após perder a disputa de terceiro para a Holanda, enquanto a Alemanha se sagrou tetracampeã no Maracanã ao vencer a Argentina.</li>
+            <br>
+            <li>A seleção da Alemanha deu uma aula de Planejamento de Projeto. Eles não gostaram de nenhuma das opções de centros de treinamento oferecidas pela organização. A solução: Eles investiram e construíram o próprio resort em Santa Cruz Cabrália (BA). Após a Copa, o CT foi doado para a comunidade local. Esse nível de isolamento e controle de dados foi um dos "segredos" para o título.</li>
+            <br>
+            <li>Pela primeira vez, o Brasil precisou seguir um caderno de encargos extremamente rígido. Isso deu origem às Arenas Multiuso. Muitos estádios foram construídos com sistemas de captação de água da chuva e painéis solares para obter a certificação LEED (Green Building), como o Mineirão e a Arena Pernambuco. O Custo dos "Elefantes Brancos": Algumas sedes, como Cuiabá, Manaus e Brasília, não tinham times nas divisões principais do futebol brasileiro na época, o que gerou críticas sobre a manutenção desses " hardwares" caros após o evento.</li>
+            <br>
+            <li>O IBC (International Broadcast Centre), montado no Rio de Janeiro, foi o coração tecnológico do evento. Foi a primeira Copa com transmissão em 4K (Ultra HD) para alguns mercados e a primeira com uso massivo de Streaming. A infraestrutura de fibra óptica instalada nos estádios teve que suportar picos de tráfego de dados gigantescos, já que todos os torcedores estavam usando redes sociais simultaneamente.</li>
+            <br>
+            <li>O nome "Fuleco" (Futebol + Ecologia) foi escolhido por votação popular, mas gerou polêmicas. Ele representa o Tatu-bola, uma espécie brasileira em extinção. O objetivo era usar o marketing da Copa para levantar fundos para a conservação da espécie, embora as ONGs ambientais tenham criticado a falta de repasses reais após o torneio.</li>
+            <br>
+            <li>A FIFA exigiu que todas as 12 cidades tivessem as "FIFA Fan Fests". Eram eventos gratuitos com telões gigantes em locais icônicos (como a Praia de Copacabana ou o Vale do Anhangabaú). Essas áreas eram consideradas "território FIFA", com regras estritas sobre quais marcas poderiam ser vendidas lá dentro, o que gerou muitos debates sobre a soberania das cidades.</li>
+        </ul>
+    </ul>
+    <br>
+    <h2 id="est14" style="color:blue;">Estádios da Copa de 2014</h2>
+    <img src="imagens/maracana14.jpg" width="400">
+    <ul>
+        <li>Estádio do Maracanã (Rio de Janeiro)</li>
+        <li>Nome Oficial: Estádio Jornalista Mário Filho</li>
+        <li>Capacidade na época: Cerca de 75.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/itaqueira14.jpg" width="400">
+    <ul>
+        <li>Arena de São Paulo (São Paulo)</li>
+        <li>Nome Oficial: Arena Corinthians</li>
+        <li>Capacidade na época: Cerca de 63.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/mineirao14.jpg" width="400">
+    <ul>
+        <li>Estádio Mineirão (Belo Horizonte)</li>
+        <li>Nome Oficial: Estádio Governador Magalhães Pinto</li>
+        <li>Capacidade na época: Cerca de 58.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/nacional14.jpg" width="400">
+    <ul>
+        <li>Estádio Nacional de Brasília (Brasília)</li>
+        <li>Nome Oficial: Estádio Mané Garrincha</li>
+        <li>Capacidade na época: Cerca de 69.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/beirario14.avif" width="400">
+    <ul>
+        <li>Estádio Beira-Rio (Porto Alegre)</li>
+        <li>Nome Oficial: Estádio José Pinheiro Borda</li>
+        <li>Capacidade na época: Cerca de 43.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/fontenova14.jpg" width="400">
+    <ul>
+        <li>Arena Fonte Nova (Salvador)</li>
+        <li>Nome Oficial: Estádio Octávio Mangabeira</li>
+        <li>Capacidade na época: Cerca de 52.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/pernambuco14.jpg" width="400">
+    <ul>
+        <li>Arena Pernambuco (Recife)</li>
+        <li>Nome Oficial: Arena de Pernambuco</li>
+        <li>Capacidade na época: Cerca de 43.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/castelao14.jpg" width="400">
+    <ul>
+        <li>Estádio Castelão (Fortaleza)</li>
+        <li>Nome Oficial: Estádio Governador Plácido Castelo</li>
+        <li>Capacidade na época: Cerca de 60.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/amazonia14.jpg" width="400">
+    <ul>
+        <li>Arena da Amazônia (Manaus)</li>
+        <li>Nome Oficial: Arena da Amazônia</li>
+        <li>Capacidade na época: Cerca de 40.500 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/pantanal14.jpeg" width="400">
+    <ul>
+        <li>Arena Pantanal (Cuiabá)</li>
+        <li>Nome Oficial: Arena Pantanal</li>
+        <li>Capacidade na época: Cerca de 41.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/baixada14.jpg" width="400">
+    <ul>
+        <li>Arena da Baixada (Curitiba)</li>
+        <li>Nome Oficial: Estádio Joaquim Américo Guimarães</li>
+        <li>Capacidade na época: Cerca de 40.000 pessoas</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <img src="imagens/dunas14.jpg" width="400">
+    <ul>
+        <li>Arena das Dunas (Natal)</li>
+        <li>Nome Oficial: Arena das Dunas</li>
+        <li>Capacidade na época: Cerca de 40.000 pessoas</li>
+    </ul>
+    <br>
+
+    <br><br>
+
+
+
+</body>
+</html>

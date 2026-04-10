@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #222;
+            line-height: 1.75;
+            font-size: 16px;
+            text-rendering: optimizeLegibility;
+        }
+        p, dd, li, label, td {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.75;
+            font-size: 1rem;
+        }
+        ul, ol {
+            max-width: 860px;
+            margin: 0 auto 20px;
+            padding-left: 1.35em;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        strong, b {
+            color: #003d80;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #007bff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        tr:hover {
+            background-color: #e9ecef;
+        }
+        td {
+            font-size: 16px;
+        }
+        dl {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        dt {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        dd {
+            margin: 0 0 15px 0;
+            line-height: 1.6;
+            color: #333;
+            font-size: 16px;
+        }
+        h3 {
+            font-size: 1.6rem;
+            color: #003d80;
+            margin: 28px auto 14px;
+            padding: 12px 18px;
+            max-width: 860px;
+            background: linear-gradient(135deg, rgba(0,123,255,0.13), rgba(0,86,179,0.08));
+            border: 1px solid rgba(0,123,255,0.24);
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            letter-spacing: 0.02em;
+        }
+        .contato-link {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #007bff;
+            display: inline-block;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .contato-link:hover {
+            background-color: #f8f9fa;
+        }
+        .voltar-link {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: white;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 0;
+            transition: background-color 0.3s, transform 0.2s ease;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+        .voltar-link:hover {
+            background-color: #f0f8ff;
+            transform: translateY(-1px);
+        }
+        .top-right-flag {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            max-width: 80px;
+            z-index: 999;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.14);
+            padding: 4px;
+            border-radius: 12px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <img src="imagens/brasil.png" alt="Bandeira do Brasil" class="top-right-flag" width="80" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <br><br><br>
+    <h1>ARTILHEIROS DO BRASIL EM COPAS</h1>
+
+    <dl>
+        <dt>Breve resumo do tema abordado:</dt>
+        <br>
+        <dd>Durante esses quase 1 século de Copa do Mundo a seleção canarinho soma exatos 237 gols no torneio, nós separamos apenas jogadores que marcaram mais de uma vez e fizemos a lista dos artilheiro, acompanhe ela logo abaixo.</dd>
+        <br>
+        <dd>As edições de Copas exibidas na lista são apenas aquelas em que os jogadores balançaram as redes.</dd>
+    </dl>
+    <br><br>
+    <a href="INDEX.html" class="voltar-link">Voltar ao Início</a>
+    <br><br>
+    <table>
+        <tr>
+            <th>Jogador</th>
+            <th>Gols</th>
+            <th>Edições</th>
+        </tr>
+        <tr>
+            <td>Ronaldo Fenômeno</td>
+            <td>15</td>
+            <td>1998, 2002, 2006</td>
+        </tr>
+        <tr>
+            <td>Pelé</td>
+            <td>12</td>
+            <td>1958, 1962, 1966, 1970</td>
+        </tr>
+        <tr>
+            <td>Ademir de Menezes</td>
+            <td>9</td>
+            <td>1950</td>
+        </tr>
+        <tr>
+            <td>Jairzinho</td>
+            <td>9</td>
+            <td>1966, 1970, 1974</td>
+        </tr>
+        <tr>
+            <td>Vavá</td>
+            <td>9</td>
+            <td>1958, 1962</td>
+        </tr>
+        <tr>
+            <td>Leônidas da Silva</td>
+            <td>8</td>
+            <td>1934, 1938</td>
+        </tr>
+        <tr>
+            <td>Neymar Jr.</td>
+            <td>8</td>
+            <td>2014, 2018, 2022</td>
+        </tr>
+        <tr>
+            <td>Rivaldo</td>
+            <td>8</td>
+            <td>1998, 2002</td>
+        </tr>
+        <tr>
+            <td>Careca</td>
+            <td>7</td>
+            <td>1986, 1990</td>
+        </tr>
+        <tr>
+            <td>Bebeto</td>
+            <td>6</td>
+            <td>1994, 1998</td>
+        </tr>
+        <tr>
+            <td>Rivellino</td>
+            <td>6</td>
+            <td>1970, 1974, 1978</td>
+        </tr>
+        <tr>
+            <td>Garrincha</td>
+            <td>5</td>
+            <td>1958, 1962, 1966</td>
+        </tr>
+        <tr>
+            <td>Romário</td>
+            <td>5</ td >
+            <td> 1990, 1994 </td>
+        </tr >
+        <tr >
+            <td> Zico </td>
+            <td> 5 </td>
+            <td> 1978, 1982, 1986 </td>
+        </tr >
+        <tr >
+            <td > Chico </td >
+            <td > 4 </td >
+            <td > 1950 </td >
+        </tr >
+        <tr>
+            <td>Sócrates</td>
+            <td>4</td>
+            <td>1982, 1986</td>
+        </tr>
+        <tr>
+            <td>Amarildo</td>
+            <td>3</td>
+            <td>1962</td>
+        </tr>
+        <tr>
+            <td>Baltazar</td>
+            <td>3</td>
+            <td>1950, 1954</td>
+        </tr>
+        <tr>
+            <td>César Sampaio</td>
+            <td>3</td>
+            <td>1998</td>
+        </tr>
+        <tr>
+            <td>Didi</td>
+            <td>3</td>
+            <td>1954, 1958</td>
+        </tr>
+        <tr>
+            <td>Dirceu</td>
+            <td>3</td>
+            <td>1978</td>
+        </tr>
+        <tr>
+            <td>Falcão</td>
+            <td>3</td>
+            <td>1982</td>
+        </tr>
+        <tr>
+            <td>Luís Fabiano</td>
+            <td>3</td >
+            <td > 2010 </td >
+        </tr >
+        <tr >
+            <td > Perácio </td >
+            <td > 3 </td >
+            <td > 1938 </td >
+        </tr >
+        <tr >
+            <td > Preguinho </td >
+            <td > 3 </td >
+            <td > 1930 </td >
+        </tr >
+         <tr >
+            <td > Zizinho </td >
+            <td > 3 </td >
+            <td > 1950, 1954 </td >  
+        </tr >
+        <tr>
+            <td>Richarlison</td>
+            <td>3</td>
+            <td>2022</td>
+        </tr>
+        <tr>
+            <td>Roberto Dinamite</td>
+            <td>3</td>
+            <td>1978</td>
+        </tr>
+        <tr>
+            <td>Tostão</td>
+            <td>3</td>
+            <td>1966, 1970</td>
+        </tr>
+        <tr>
+            <td>Adriano</td>
+            <td>2</td>
+            <td>2006</td>
+        </tr>
+        <tr>
+            <td>David Luiz</td>
+            <td>2</td>
+            <td>2014</td>
+        </tr>
+        <tr>
+            <td>Éder</td>
+            <td>2</td>
+            <td>1982</td>
+        </tr>
+        <tr>
+            <td>Elano</td>
+            <td>2</td>
+            <td>2010</td>
+        </tr>
+        <tr>
+            <td>Fred</td>
+            <td>2</td>
+            <td>2006, 2014</td>
+        </tr>
+        <tr>
+            <td>Jair</td>
+            <td>2</td>
+            <td>1950</td>
+        </tr>
+        <tr>
+            <td>Josimar</td>
+            <td>2</td>
+            <td>1986</td>
+        </tr>
+        <tr>
+            <td>Julinho</td>
+            <td>2</td>
+            <td>1954</td>
+        </tr>
+        <tr>
+            <td>Muller</td>
+            <td>2</td>
+            <td>1986, 1990</td>
+        </tr>
+        <tr>
+            <td>Nelinho</td>
+            <td>2</td>
+            <td>1978</td>
+        </tr>
+        <tr>
+            <td>Oscar</td>
+            <td>2</td>
+            <td>2014</td>
+        </tr>
+        <tr>
+            <td>Philippe Coutinho</td>
+            <td>2</td>
+            <td>2018</td>
+        </tr>
+        <tr>
+            <td>Robinho</td>
+            <td>2</td>
+            <td>2010</td>
+        </tr>
+        <tr>
+            <td>Ronaldinho Gaúcho</td>
+            <td>2</td>
+            <td>2002</td>
+        </tr>
+        <tr>
+            <td>Serginho Chulapa</td>
+            <td>2</td>
+            <td>1982</td>
+        </tr>
+        <tr>
+            <td>Thiago Silva</td>
+            <td>2</td>
+            <td>2014,2018</td>
+        </tr>
+        <tr>
+            <td>Zagallo</td>
+            <td>2</td>
+            <td>1958,1962</td>
+        </tr>
+        <tr>
+            <td>Zizinho</td>
+            <td>2</td>
+            <td>1950</td>
+        </tr>
+        <tr>
+            <td>Mazola</td>
+            <td>2</td>
+            <td>1958</td>
+        </tr>
+        <tr>
+            <td>Moderato</td>
+            <td>2</td>
+            <td>1930</td>
+        </tr>
+         <tr>
+            <td>Pinga</td>
+            <td>2</td>
+            <td>1954</td>
+        </tr>
+
+</body>
+</html>

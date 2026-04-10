@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #222;
+            line-height: 1.75;
+            font-size: 16px;
+            text-rendering: optimizeLegibility;
+        }
+        p, dd, li, label, td {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.75;
+            font-size: 1rem;
+        }
+        ul, ol {
+            max-width: 860px;
+            margin: 0 auto 20px;
+            padding-left: 1.35em;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        strong, b {
+            color: #003d80;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #007bff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            background-color: #007bff !important;
+            color: white !important;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        dl {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        dt {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        dd {
+            margin: 0 0 15px 0;
+            line-height: 1.6;
+            color: #333;
+            font-size: 16px;
+        }
+        .contato-link {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #007bff;
+            display: inline-block;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .contato-link:hover {
+            background-color: #f8f9fa;
+        }
+        .voltar-link {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: white;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 0;
+            transition: background-color 0.3s, transform 0.2s ease;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+        .voltar-link:hover {
+            background-color: #f0f8ff;
+            transform: translateY(-1px);
+        }
+        a[href^="#"] {
+            display: inline-block;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
+            transition: transform 0.18s ease, background 0.2s ease;
+            margin: 4px 0;
+        }
+        a[href^="#"]:hover {
+            background: linear-gradient(135deg, #0056b3, #003d80);
+            transform: translateY(-1px);
+        }
+
+        .top-right-flag {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            max-width: 80px;
+            z-index: 999;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.14);
+            padding: 4px;
+            border-radius: 12px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <img src="imagens/brasil.png" alt="Bandeira do Brasil" class="top-right-flag" width="80" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <br><br><br>
+    <h1>JOGADORES BRASILEIROS CAMPEÕES DA COPA DO MUNDO</h1>
+    <dl>
+        <dt>Breve resumo do tema abordado:</dt>
+        <br>
+        <dd>Durante esses quase 1 século de Copa do Mundo a seleção canarinho soma 5 títulos no torneio sendo a maior campeã, nós separamos todos os jogadores e treinadores presente nos títulos logo abaixo.</dd>
+        <br>
+        <dd>As edições de Copas exibidas na lista são apenas aquelas em que os jogadores balançaram as redes.</dd>
+    </dl>
+    <br><br>
+    <a href="INDEX.html" class="voltar-link">Voltar ao Início</a>
+    <br><br>
+            <li><a href="#58">Copa de 1958</a></li>
+            <li><a href="#62">Copa de 1962</a></li>
+            <li><a href="#70">Copa de 1970</a></li>
+            <li><a href="#94">Copa de 1994</a></li>
+            <li><a href="#02">Copa de 2002</a></li>  
+        <br><br>
+
+    <h2 id="58" style="color:blue;">COPA DE 1958 (SUÉCIA)</h2>
+    <h3>Treinador: </h3>
+    <ul>
+        <li>Vicente Feola</li>
+    </ul>  
+    <h3>Goleiros: </h3>
+    <ul>
+        <li>Gilmar</li>
+        <li>Castilho</li>
+    </ul>
+    <h3>Defensores: </h3>
+    <ul>
+        <li>Bellini (C)</li>
+        <li>Djalma Santos</li>
+        <li>Oreco</li>
+        <li>Zózimo</li>
+        <li>Nílton Santos</li>
+        <li>De Sordi</li>
+        <li>Orlando</li>
+        <li>Mauro</li>
+    </ul>
+    <h3>Meio Campistas: </h3>
+    <ul>
+        <li>Dino Sani</li>
+        <li>Didi</li>
+        <li>Zito</li>
+        <li>Moacir</li>
+    </ul>
+    <h3>Atacantes: </h3>
+    <ul>
+        <li>Zagallo</li>
+        <li>Pelé</li>
+        <li>Garrincha</li>
+        <li>Joel</li>
+        <li>Mazzola</li>
+        <li>Vavá</li>
+        <li>Dida</li>
+        <li>Pepe</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <br>
+
+    <h2 id="62" style="color:blue;">COPA DE 1962 (CHILE)</h2>
+    <h3>Treinador: </h3>
+    <ul>
+        <li>Aymoré Moreira</li>
+    </ul>  
+    <h3>Goleiros: </h3>
+    <ul>
+        <li>Gilmar</li>
+        <li>Castilho</li>
+    </ul>
+    <h3>Defensores: </h3>
+    <ul>
+        <li>Mauro (C)</li>
+        <li>Djalma Santos</li>
+        <li>Jair Marinho</li>
+        <li>Zózimo</li>
+        <li>Nílton Santos</li>
+        <li>Jurandir</li>
+        <li>Altair</li>
+        <li>Bellini</li>
+    </ul>
+    <h3>Meio Campistas: </h3>
+    <ul>
+        <li>Zito</li>
+        <li>Didi</li>
+        <li>Zequinha</li>
+        <li>Mengálvio</li>
+    </ul>
+    <h3>Atacantes: </h3>
+    <ul>
+        <li>Zagallo</li>
+        <li>Pelé</li>
+        <li>Garrincha</li>
+        <li>Coutinho</li>
+        <li>Amarildo</li>
+        <li>Vavá</li>
+        <li>Jair da Costa</li>
+        <li>Pepe</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <br>
+
+    <h2 id="70" style="color:blue;">COPA DE 1970 (México)</h2>
+    <h3>Treinador: </h3>
+    <ul>
+        <li>Zagallo</li>
+    </ul>  
+    <h3>Goleiros: </h3>
+    <ul>
+        <li>Félix</li>
+        <li>Ado</li>
+        <li>Leão</li>
+    </ul>
+    <h3>Defensores: </h3>
+    <ul>
+        <li>Carlos Alberto Torres (C)</li>
+        <li>Brito</li>
+        <li>Piazza</li>
+        <li>Marco Antônio</li>
+        <li>Baldocchi</li>
+        <li>Fontana</li>
+        <li>Everaldo</li>
+        <li>Joel Camargo</li>
+        <li>Zé Maria</li>
+    </ul>
+    <h3>Meio Campistas: </h3>
+    <ul>
+        <li>Clodoaldo</li>
+        <li>Gérson</li>
+        <li>Rivellino</li>
+        <li>Paulo César Caju</li>
+        <li>Tostão</li>
+    </ul>
+    <h3>Atacantes: </h3>
+    <ul>
+        <li>Jairzinho</li>
+        <li>Pelé</li>
+        <li>Roberto Miranda</li>
+        <li>Edu</li>
+        <li>Dario</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <br>
+
+    <h2 id="94" style="color:blue;">COPA DE 1994 (ESTADOS UNIDOS)</h2>
+    <h3>Treinador: </h3>
+    <ul>
+        <li>Carlos Alberto Parreira</li>
+    </ul>  
+    <h3>Goleiros: </h3>
+    <ul>
+        <li>Taffarel</li>
+        <li>Zetti</li>
+        <li>Gilmar</li>
+    </ul>
+    <h3>Defensores: </h3>
+    <ul>
+        <li>Jorginho</li>
+        <li>Ricardo Rocha</li>
+        <li>Ronaldão</li>
+        <li>Branco</li>
+        <li>Aldair</li>
+        <li>Cafu</li>
+        <li>Márcio Santos</li>
+        <li>Leonardo</li>
+    </ul>
+    <h3>Meio Campistas: </h3>
+    <ul>
+        <li>Mauro Silva</li>
+        <li>Dunga (C)</li>
+        <li>Zinho</li>
+        <li>Raí</li>
+        <li>Mazinho</li>
+        <li>Paulo Sérgio</li>
+    </ul>
+    <h3>Atacantes: </h3>
+    <ul>
+        <li>Ronaldo Fenômeno</li>
+        <li>Bebeto</li>
+        <li>Romário</li>
+        <li>Muller</li>
+        <li>Viola</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <br>
+
+    <h2 id="02" style="color:blue;">COPA DE 2002 (CORÉIA DO SUL E JAPÃO)</h2>
+    <h3>Treinador: </h3>
+    <ul>
+        <li>Luiz Felipe Scolari</li>
+    </ul>  
+    <h3>Goleiros: </h3>
+    <ul>
+        <li>Marcos</li>
+        <li>Dida</li>
+        <li>Rogério Ceni</li>
+    </ul>
+    <h3>Defensores: </h3>
+    <ul>
+        <li>Edmílson</li>
+        <li>Roque Júnior</li>
+        <li>Lúcio</li>
+        <li>Cafu (C)</li>
+        <li>Roberto Carlos</li>
+        <li>Júnior</li>
+        <li>Belleti</li>
+        <li>Anderson Polga</li>
+    </ul>
+    <h3>Meio Campistas: </h3>
+    <ul>
+        <li>Gilberto Silva</li>
+        <li>Kléberson</li>
+        <li>Juninho Paulista</li>
+        <li>Ricardinho</li>
+        <li>Kaká</li>
+        <li>Vampeta</li>
+    </ul>
+    <h3>Atacantes: </h3>
+    <ul>
+        <li>Ronaldo Fenômeno</li>
+        <li>Rivaldo</li>
+        <li>Ronaldinho Gaúcho</li>
+        <li>Luizão</li>
+        <li>Denílson</li>
+        <li>Edílson</li>
+    </ul>    
+    
+
+
+</body>
+</html>

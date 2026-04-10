@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte Sua Convocação</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #222;
+            line-height: 1.75;
+            font-size: 16px;
+            text-rendering: optimizeLegibility;
+        }
+        p, dd, li, label, td {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.75;
+            font-size: 1rem;
+        }
+        ul, ol {
+            max-width: 860px;
+            margin: 0 auto 20px;
+            padding-left: 1.35em;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        strong, b {
+            color: #003d80;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #007bff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        dl {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        dt {
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        dd {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        h3 {
+            background-color: #007bff !important;
+            color: white !important;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .contato-link {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #007bff;
+            display: inline-block;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .contato-link:hover {
+            background-color: #f8f9fa;
+        }
+        .convocacao {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .posicao {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #convocacao-final {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+        a {
+            display: inline-block;
+            margin: 20px auto;
+            text-align: center;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .voltar-link {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: white;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 0;
+            transition: background-color 0.3s, transform 0.2s ease;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+        .voltar-link:hover {
+            background-color: #f0f8ff;
+            transform: translateY(-1px);
+        }
+        .player-grid {
+            display: grid;
+            gap: 12px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            margin-top: 10px;
+        }
+        .player-grid input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        .top-right-flag {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            max-width: 80px;
+            z-index: 999;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.14);
+            padding: 4px;
+            border-radius: 12px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <img src="imagens/brasil.png" alt="Bandeira do Brasil" class="top-right-flag" width="80" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <br><br><br>
+    <h1>Monte Sua Convocação</h1>
+    
+    <dl>
+        <dt>Breve Resumo</dt>
+        <dd>Monte sua própria convocação para a Seleção Brasileira! Escolha jogadores para cada posição e veja sua equipe ideal.</dd>
+    </dl>
+    <br><br>
+    <a href="INDEX.html" class="voltar-link">Voltar ao Início</a>
+    <br><br>
+    <div class="convocacao">
+        <form id="form-convocacao">
+            <div class="posicao">
+                <h3>Goleiros (3)</h3>
+                <div class="player-grid">
+                    <input type="text" id="goleiro1" name="goleiro1" placeholder="Goleiro 1">
+                    <input type="text" id="goleiro2" name="goleiro2" placeholder="Goleiro 2">
+                    <input type="text" id="goleiro3" name="goleiro3" placeholder="Goleiro 3">
+                </div>
+            </div>
+            <div class="posicao">
+                <h3>Laterais (4)</h3>
+                <div class="player-grid">
+                    <input type="text" id="lateral1" name="lateral1" placeholder="Lateral 1">
+                    <input type="text" id="lateral2" name="lateral2" placeholder="Lateral 2">
+                    <input type="text" id="lateral3" name="lateral3" placeholder="Lateral 3">
+                    <input type="text" id="lateral4" name="lateral4" placeholder="Lateral 4">
+                </div>
+            </div>
+            <div class="posicao">
+                <h3>Zagueiros (4)</h3>
+                <div class="player-grid">
+                    <input type="text" id="zagueiro1" name="zagueiro1" placeholder="Zagueiro 1">
+                    <input type="text" id="zagueiro2" name="zagueiro2" placeholder="Zagueiro 2">
+                    <input type="text" id="zagueiro3" name="zagueiro3" placeholder="Zagueiro 3">
+                    <input type="text" id="zagueiro4" name="zagueiro4" placeholder="Zagueiro 4">
+                </div>
+            </div>
+            <div class="posicao">
+                <h3>Meias (6)</h3>
+                <div class="player-grid">
+                    <input type="text" id="meia1" name="meia1" placeholder="Meia 1">
+                    <input type="text" id="meia2" name="meia2" placeholder="Meia 2">
+                    <input type="text" id="meia3" name="meia3" placeholder="Meia 3">
+                    <input type="text" id="meia4" name="meia4" placeholder="Meia 4">
+                    <input type="text" id="meia5" name="meia5" placeholder="Meia 5">
+                    <input type="text" id="meia6" name="meia6" placeholder="Meia 6">
+                </div>
+            </div>
+            <div class="posicao">
+                <h3>Atacantes (9)</h3>
+                <div class="player-grid">
+                    <input type="text" id="atacante1" name="atacante1" placeholder="Atacante 1">
+                    <input type="text" id="atacante2" name="atacante2" placeholder="Atacante 2">
+                    <input type="text" id="atacante3" name="atacante3" placeholder="Atacante 3">
+                    <input type="text" id="atacante4" name="atacante4" placeholder="Atacante 4">
+                    <input type="text" id="atacante5" name="atacante5" placeholder="Atacante 5">
+                    <input type="text" id="atacante6" name="atacante6" placeholder="Atacante 6">
+                    <input type="text" id="atacante7" name="atacante7" placeholder="Atacante 7">
+                    <input type="text" id="atacante8" name="atacante8" placeholder="Atacante 8">
+                    <input type="text" id="atacante9" name="atacante9" placeholder="Atacante 9">
+                </div>
+            </div>
+            <button type="button" onclick="mostrarConvocacao()">Mostrar Convocação</button>
+        </form>
+        <div id="convocacao-final"></div>
+    </div>
+    <script>
+        function mostrarConvocacao() {
+            const categorias = [
+                { nome: 'Goleiros', prefixo: 'goleiro', quantidade: 3 },
+                { nome: 'Laterais', prefixo: 'lateral', quantidade: 4 },
+                { nome: 'Zagueiros', prefixo: 'zagueiro', quantidade: 4 },
+                { nome: 'Meias', prefixo: 'meia', quantidade: 6 },
+                { nome: 'Atacantes', prefixo: 'atacante', quantidade: 9 }
+            ];
+            const resultado = categorias.map(categoria => {
+                const jogadores = [];
+                for (let i = 1; i <= categoria.quantidade; i++) {
+                    const campo = document.getElementById(categoria.prefixo + i);
+                    const valor = campo ? campo.value.trim() : '';
+                    jogadores.push(valor || `Jogador ${i}`);
+                }
+                return `
+                    <section>
+                        <h3>${categoria.nome}</h3>
+                        <ol>
+                            ${jogadores.map(jogador => `<li>${jogador}</li>`).join('')}
+                        </ol>
+                    </section>`;
+            }).join('');
+            document.getElementById('convocacao-final').innerHTML = resultado;
+            document.getElementById('convocacao-final').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+    
+  
+
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #222;
+            line-height: 1.75;
+            font-size: 16px;
+            text-rendering: optimizeLegibility;
+        }
+        p, dd, li, label, td {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.75;
+            font-size: 1rem;
+        }
+        ul, ol {
+            max-width: 860px;
+            margin: 0 auto 20px;
+            padding-left: 1.35em;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        strong, b {
+            color: #003d80;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #007bff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        dl {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        dt {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        dd {
+            margin: 0 0 15px 0;
+            line-height: 1.6;
+            color: #333;
+            font-size: 16px;
+        }
+        h2 {
+            background-color: #007bff !important;
+            color: white !important;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .contato-link {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #007bff;
+            display: inline-block;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .contato-link:hover {
+            background-color: #f8f9fa;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.14);
+            padding: 4px;
+            border-radius: 12px;
+            background-color: white;
+        }
+        .bola-icon,
+        a.contato-link img {
+            display: inline-block;
+            margin: 0;
+            vertical-align: middle;
+            border: none;
+            padding: 0;
+        }
+        .voltar-link {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: white;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 0;
+            transition: background-color 0.3s, transform 0.2s ease;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+        .voltar-link:hover {
+            background-color: #f0f8ff;
+            transform: translateY(-1px);
+        }
+        .top-right-flag {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            max-width: 80px;
+            z-index: 999;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.14);
+            padding: 4px;
+            border-radius: 12px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <img src="imagens/brasil.png" alt="Bandeira do Brasil" class="top-right-flag" width="80" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <br><br><br>
+    <h1>EQUIPE IDEAL DA SELEÇÃO EM COPAS</h1>
+    <dl>
+        <dt>Breve resumo do tema abordado:</dt>
+        <br>
+        <dd>Durante esses quase 1 século de Copa do Mundo a seleção canarinho já obteve centenas de jogadores atuando com sua camisa em Copas, nós montamos um esquema para que você monte com base na sua opinião a escalacão perfeita dos melhores jogadores por posição.</dd>
+        <br>
+    </dl>
+    <br><br>
+    <a href="INDEX.html" class="voltar-link">Voltar ao Início</a>
+    <br><br>
+
+    <h2 style="color:blue;">Monte sua Escalação baseada na formação 4-3-3</h2>
+    Goleiro: <select name="GOL">
+            <option value="escolha"></option>    
+            <option value="taffarel">Taffarel</option>
+            <option value="Gilmar">Gilmar dos Santos</option>
+            <option value="Marcos">Marcos</option>
+            <option value="Félix">Félix</option>
+            <option value="Leão">Emerson Leão</option>
+            <option value="Dida">Dida</option>
+
+    </select>
+    <br><br>
+    Lateral Direito: <select name="LD">
+            <option value="escolha"></option>
+            <option value="Djalma">Djalma Santos</option>
+            <option value="capita">Carlos Alberto Torres</option>
+            <option value="cafu">Cafú</option>
+            <option value="Leandro">Leandro</option>
+            <option value="Jorginho">Jorginho</option>
+            <option value="Maicon">Maicon</option>
+            <option value="Dani">Dani Alves</option>
+    </select>
+    <br><br>
+    Zagueiro: <select name="ZAG"> 
+            <option value="escolha"></option>
+            <option value="lucio">Lúcio</option>
+            <option value="bellini">Bellini</option>
+            <option value="Mauro">Mauro Ramos</option>
+            <option value="Aldair">Aldair</option>
+            <option value="Oscar">Oscar</option>
+            <option value="Edmílson">Edmílson</option>
+            <option value="thiago">Thiago Silva</option>
+            <option value="orlando">Orlando Peçanha</option>
+            <option value="zozimo">Zózimo</option>
+            <option value="piazza">Piazza</option>
+            <option value="Luizinho">Luizinho</option>
+            <option value="Marcio">Márcio Santos</option>
+            <option value="Roque">Roque Júnior</option>
+    </select>
+    <br><br>
+    Zagueiro: <select name="ZAG">
+            <option value="escolha"></option>
+            <option value="lucio">Lúcio</option>
+            <option value="bellini">Bellini</option>
+            <option value="Mauro">Mauro Ramos</option>
+            <option value="Aldair">Aldair</option>
+            <option value="Oscar">Oscar</option>
+            <option value="Edmílson">Edmílson</option>
+            <option value="thiago">Thiago Silva</option>
+            <option value="orlando">Orlando Peçanha</option>
+            <option value="zozimo">Zózimo</option>
+            <option value="piazza">Piazza</option>
+            <option value="Luizinho">Luizinho</option>
+            <option value="Marcio">Márcio Santos</option>
+            <option value="Roque">Roque Júnior</option>
+    </select>
+    <br><br>
+    Lareral Esquerdo: <select name="LE">
+            <option value="escolha"></option>
+            <option value="nilton">Nilton Santos</option>
+            <option value="roberto">Roberto Carlos</option>
+            <option value="junior">Maestro Junior</option>
+            <option value="branco">Branco</option>
+            <option value="everaldo">Everaldo</option>
+            <option value="leonardo">Leonardo</option>
+            <option value="marcelo">Marcelo</option>
+    </select>
+    <br><br>
+    Volante: <select name="VOL">
+            <option value="escolha"></option>
+            <option value="zito">Zito</option>
+            <option value="clodoaldo">Clodoaldo</option>
+            <option value="dunga">Dunga</option>
+            <option value="Mauro">Mauro Silva</option>
+            <option value="gilberto">Gilberto Silva</option>
+            <option value="falcao">Falcão</option>
+            <option value="cerezo">Cerezo</option>
+            <option value="casemiro">Casemiro</option>
+    </select>
+    <br><br>
+    Meia: <select name="MEI">
+            <option value="escolha"></option>
+            <option value="gerson">Gérson</option>
+            <option value="rivellino">Rivellino</option>
+            <option value="zico">Zico</option>
+            <option value="didi">Didi</option>
+            <option value="mazinho">Mazinho</option>
+            <option value="Kleberson">Kléberson</option>
+            <option value="Tostao">Tostão</option>
+            <option value="rai">Raí</option>
+            <option value="zinho">Zinho</option>
+            <option value="Pernambuco">Juninho Pernambucano</option>
+            <option value="paulista">Juninho Paulista</option>
+            <option value="kaka">Kaká</option>
+            <option value="socrates">Sócrates</option>
+            <option value="gaucho">Ronaldinho Gaúcho</option>
+            <option value="rivaldo">Rivaldo</option>
+    </select>
+    <br><br>
+    Meia: <select name="MEI">
+            <option value="escolha"></option>
+            <option value="gerson">Gérson</option>
+            <option value="rivellino">Rivellino</option>
+            <option value="zico">Zico</option>
+            <option value="didi">Didi</option>
+            <option value="mazinho">Mazinho</option>
+            <option value="Kleberson">Kléberson</option>
+            <option value="Tostao">Tostão</option>
+            <option value="rai">Raí</option>
+            <option value="zinho">Zinho</option>
+            <option value="Pernambuco">Juninho Pernambucano</option>
+            <option value="paulista">Juninho Paulista</option>
+            <option value="kaka">Kaká</option>
+            <option value="socrates">Sócrates</option>
+            <option value="gaucho">Ronaldinho Gaúcho</option>
+            <option value="rivaldo">Rivaldo</option>
+    </select>
+    <br><br>
+    Atacante: <select name="PD">
+            <option value="escolha"></option>
+            <option value="garrincha">Garrincha</option>
+            <option value="jairzinho">Jairzinho</option>
+            <option value="botelho">Julinho Botelho</option>
+            <option value="Zagallo">Zagallo</option>
+            <option value="pepe">Pepe</option>
+            <option value="aleixo">Éder Aleixo</option>
+            <option value="neymar">Neymar</option>
+            <option value="ronaldo">Ronaldo Fênomeno</option>
+            <option value="romario">Romário</option>
+            <option value="vava">Vavá</option>
+            <option value="carece">Careca</option>
+            <option value="dinamite">Roberto Dinamite</option>
+            <option value="Amarildo">Amarildo</option>
+            <option value="bebeto">Bebeto</option>
+            <option value="ademir">Ademir de Menezes</option>
+            <option value="leonidas">Leônidas da Silva</option>
+    </select>
+    <br><br>
+    Atacante: <select name="ATA">
+            <option value="escolha"></option>
+            <option value="garrincha">Garrincha</option>
+            <option value="jairzinho">Jairzinho</option>
+            <option value="botelho">Julinho Botelho</option>
+            <option value="Zagallo">Zagallo</option>
+            <option value="pepe">Pepe</option>
+            <option value="aleixo">Éder Aleixo</option>
+            <option value="neymar">Neymar</option>
+            <option value="ronaldo">Ronaldo Fênomeno</option>
+            <option value="romario">Romário</option>
+            <option value="vava">Vavá</option>
+            <option value="carece">Careca</option>
+            <option value="dinamite">Roberto Dinamite</option>
+            <option value="Amarildo">Amarildo</option>
+            <option value="bebeto">Bebeto</option>
+            <option value="ademir">Ademir de Menezes</option>
+            <option value="leonidas">Leônidas da Silva</option>
+    </select>
+    <br><br>
+    Atacante: <select name="PE">
+            <option value="escolha"></option>
+            <option value="garrincha">Garrincha</option>
+            <option value="jairzinho">Jairzinho</option>
+            <option value="botelho">Julinho Botelho</option>
+            <option value="Zagallo">Zagallo</option>
+            <option value="pepe">Pepe</option>
+            <option value="aleixo">Éder Aleixo</option>
+            <option value="neymar">Neymar</option>
+            <option value="ronaldo">Ronaldo Fênomeno</option>
+            <option value="romario">Romário</option>
+            <option value="vava">Vavá</option>
+            <option value="carece">Careca</option>
+            <option value="dinamite">Roberto Dinamite</option>
+            <option value="Amarildo">Amarildo</option>
+            <option value="bebeto">Bebeto</option>
+            <option value="ademir">Ademir de Menezes</option>
+            <option value="leonidas">Leônidas da Silva</option>
+    </select>
+    <br><br><br>
+    <button onclick="imprimirOpcao()">Exibir Seleção</button>
+    <div id="resultados-wrapper" style="display: none; background: rgba(255, 255, 255, 0.95); padding: 20px; border-radius: 16px; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12); max-width: 720px; margin: 16px auto; text-align: center;">
+        <img id="camisa-imagem" src="imagens/camisa.png" alt="Camisa da seleção" style="display: none; max-width: 180px; margin: 0 auto 16px;" />
+        <div id="exibicao"></div>
+        <div id="campo-container" style="display: none; position: relative; width: 100%; max-width: 640px; aspect-ratio: 0.75; margin: 16px auto; background: url('imagens/campo.avif') center/cover no-repeat; border-radius: 16px; overflow: hidden;">
+            <div id="posicoes-overlay" style="position: absolute; inset: 0;"></div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #222;
+            line-height: 1.75;
+            font-size: 16px;
+            text-rendering: optimizeLegibility;
+        }
+        p, dd, li, label, td {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.75;
+            font-size: 1rem;
+        }
+        ul, ol {
+            max-width: 860px;
+            margin: 0 auto 20px;
+            padding-left: 1.35em;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        strong, b {
+            color: #003d80;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #007bff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            background-color: #007bff !important;
+            color: white !important;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        dl {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        dt {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        dd {
+            margin: 0 0 15px 0;
+            line-height: 1.6;
+            color: #333;
+            font-size: 16px;
+        }
+        h3 {
+            background-color: #007bff !important;
+            color: white !important;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .contato-link {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #007bff;
+            display: inline-block;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .contato-link:hover {
+            background-color: #f8f9fa;
+        }
+        .voltar-link {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: white;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 0;
+            transition: background-color 0.3s, transform 0.2s ease;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+        .voltar-link:hover {
+            background-color: #f0f8ff;
+            transform: translateY(-1px);
+        }
+        a[href^="#"] {
+            display: inline-block;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
+            transition: transform 0.18s ease, background 0.2s ease;
+            margin: 4px 0;
+        }
+        a[href^="#"]:hover {
+            background: linear-gradient(135deg, #0056b3, #003d80);
+            transform: translateY(-1px);
+        }
+        .top-right-flag {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            max-width: 80px;
+            z-index: 999;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.14);
+            padding: 4px;
+            border-radius: 12px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <img src="imagens/brasil.png" alt="Bandeira do Brasil" class="top-right-flag" width="80" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <br><br><br>
+    <h1>RECORDES E CURIOSIDADES DA SELEÇÃO BRASILEIRA EM COPAS</h1>
+    <dl>
+        <dt>Breve resumo do tema abordado:</dt>
+        <br><br>
+        <dd>Durante esses quase 1 século de Copa do Mundo a seleção canarinho já obteve vários recordes que ainda se mantem de pé, nós separamos os recordes que a seleção ou jogadores ainda possuem até o momento.</dd>
+        <br>
+    </dl>
+    <br><br>
+    <a href="INDEX.html" class="voltar-link">Voltar ao Início</a>
+    <br><br>
+   
+    <a href="#rec">Recordes</a>
+    <br>
+    <a href="#cur">Curiosidades</a>
+    <br><br><br><br>
+
+    <h2 id="rec" style="color:blue;">RECORDES DA SELEÇÃO BRASILEIRA EM COPAS</h2>    
+    <ul type="disc">
+        <li>O Único Onipresente: O Brasil participou de todas as 22 edições realizadas até hoje (1930-2022) e já está garantido na 23ª. Ninguém mais tem 100% de presença.</li>
+        <br>
+        <li>A Fábrica de Vitórias: Ninguém venceu mais jogos de Copa do Mundo do que a Seleção Brasileira. São 76 vitórias em 114 partidas, o que garante o melhor aproveitamento da história do torneio.</li>
+        <br>
+        <li>Máquina de Gols: O Brasil é o maior artilheiro da história das Copas, com 237 gols marcados. A Alemanha vem logo atrás, com 232.</li>
+        <br>
+        <li>O Rei do Tri: Pelé continua sendo o único jogador na história a ter conquistado três Copas do Mundo (1958, 1962 e 1970) como jogador.</li>
+        <br>
+        <li>O "Capitão Fôlego": Cafu detém um recorde mundial dificílimo de ser batido: ele é o único jogador a ter disputado três finais de Copa do Mundo seguidas (1994, 1998 e 2002).</li>
+        <br>
+        <li>O Carimbador de Redes: Jairzinho, o "Furacão da Copa", realizou um feito épico em 1970: ele marcou gols em todos os jogos que disputou naquela edição (6 jogos, 7 gols).</li>
+        <br>
+        <li>Recorde de Jogos: Cafu é o brasileiro com mais partidas em Copas, totalizando 20 jogos. Ele é seguido de perto por Ronaldo Fenômeno, com 19.</li>
+        <br>
+        <li>Sequência Invicta: O Brasil detém a maior sequência de jogos sem derrota em Copas do Mundo: 13 partidas, entre a estreia em 1958 e a derrota para a Hungria em 1966.</li>
+        <br>
+        <li>Vencer em (quase) todos os continentes: O Brasil é a única seleção que conquistou a Copa do Mundo em quatro continentes diferentes: Europa (Suécia, 1958), Américas (Chile, 1962; México, 1970; EUA, 1994), Ásia (Coreia/Japão, 2002)</li>
+        <br>
+        <li>O "Paredão" das Copas: Emerson Leão (1970, 1974, 1978 e 1986) e Castilho (1950, 1954, 1958 e 1962) são os goleiros brasileiros com mais convocações para Copas (4 cada).</li>
+        <br>
+        <li>Vencer Todos os Jogos: Apenas duas vezes na história uma seleção foi campeã vencendo absolutamente todos os jogos da campanha: o Brasil de 1970 (6 jogos, 6 vitórias) e o Brasil de 2002 (7 jogos, 7 vitórias).</li>
+        <br>
+        <li>A Soberana: A seleção brasileira é a maior campeã de copas do mundo, 5 no total.</li>
+    </ul>
+    <hr style="border: none; border-top: 2px solid #ddd; margin: 20px 0;">
+    <br>
+
+    <h2 id="cur" style="color:blue;">CURIOSIDADES DA SELEÇÃO BRASILEIRA EM COPAS</h2>
+
+    <ul type="disc">
+        <li>A Numeração do Acaso: Em 1958, a CBD (antiga CBF) esqueceu de enviar a numeração dos jogadores para a FIFA. Um dirigente uruguaio da federação internacional numerou os jogadores aleatoriamente. Por puro acaso, Pelé recebeu a 10 e Garrincha a 11, imortalizando esses números para sempre.</li>
+        <br>
+        <li>O Sumiço do Juiz: Em 1962, Garrincha foi expulso na semifinal contra o Chile. Para que ele pudesse jogar a final contra a Tchecoslováquia, houve uma manobra de bastidores onde o bandeirinha (que era o principal acusador) "desapareceu" antes de prestar depoimento, e a expulsão não foi relatada na súmula oficial.</li>
+        <br>
+        <li>Roubo da Taça: O Brasil ganhou o direito de ficar com a taça Jules Rimet permanentemente após o Tri em 1970. Infelizmente, ela foi roubada da sede da CBF em 1983 e, segundo as investigações, derretida. Hoje, o que temos é uma réplica.</li>
+        <br>
+        <li>Primeira Transmissão: A Copa de 1970 foi a primeira transmitida ao vivo e a cores para o Brasil, o que ajudou a criar a mística mundial em torno do "Manto Canarinho" e do futebol arte.</li>
+        <br>
+        <li>A Viagem Infinita de 1934: Na Copa da Itália, o Brasil levou 12 dias viajando de navio até Gênova. O cansaço foi tanto que a seleção foi eliminada pela Espanha apenas três dias após o desembarque, no primeiro jogo.</li>
+        <br>
+        <li>O Fim do Branco: Até 1950, o Brasil jogava de branco com detalhes azuis. Após o Maracanazo, a camisa foi considerada "amaldiçoada" e "sem alma". Um concurso foi aberto pelo jornal Correio da Manhã para escolher um novo uniforme que usasse as quatro cores da bandeira.</li>
+        <br>
+        <li>A Primeira "Comissão Técnica" Moderna: Em 1958, o Brasil levou uma equipe interdisciplinar inédita: psicólogo, dentista (para tratar infecções que afetavam o rendimento), nutricionista e até um observador técnico. Foi a primeira vez que o futebol foi tratado com esse nível de ciência.</li>
+        <br>
+        <li>O "Não" ao Psicólogo: O psicólogo da seleção em 58, João Carvalhaes, aplicou testes e disse que Pelé e Garrincha não tinham perfil psicológico para disputar o torneio. O técnico Vicente Feola simplesmente ignorou: "Você pode estar certo, mas o Pelé vai jogar".</li>
+        <br>
+        <li>Zagallo, o Colecionador de Medalhas: Mario Jorge Lobo Zagallo é a única pessoa no planeta a ter quatro medalhas de campeão: duas como jogador (58/62), uma como técnico (70) e uma como coordenador técnico (94).</li>
+        <br>
+        <li>O Capitão Inovador: Bellini, capitão em 1958, foi quem inventou o gesto de levantar a taça sobre a cabeça. Ele fez isso a pedido dos fotógrafos, que não conseguiam ver o troféu por causa do tumulto. O gesto virou o padrão mundial de comemoração desde então.</li>
+        <br>
+        <li>Invictos, mas sem a Taça: O Brasil é o único país a ter terminado duas Copas do Mundo invicto e não ter sido campeão. Isso aconteceu em 1978 (o "Campeão Moral") e em 1986 (eliminado nos pênaltis pela França sem perder no tempo normal).</li>
+        <br>
+        <li>O Mistério Médico: Antes da final da copa de 1998, o grande craque da seleção, Ronaldo Fenômeno, teve uma convulsão no hotel com risco de perder a final, cerca de 1 hora antes da final a FIFA divulgou a súmula com Edmundo de titular, o mundo ficou em choque, os jogadores estavam abalados pelo que viram no hotel, Ronaldo chegou no estádio 40 minutos antes da bola rolar falando que estava apto, e o Zagallo, ao escutar isso, o colocou como titular, é díficil dizer não ao craque da seleção, muitos dizem até hoje que o Zagallo não poderia ter liberado o Ronaldo para jogar, pois fez com que os jogadores ficassem receosos dentro de campo em relação a saúde do companheiro. </li>
+    </ul>
+
+
+
+</body>
+</html>
