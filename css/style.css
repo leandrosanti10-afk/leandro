@@ -963,3 +963,9 @@ button:hover {
     gap: 0.7rem;
     margin-top: 1rem;
 }
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
