@@ -1,3 +1,34 @@
+/* =========================================================
+   MENU HAMBURGUER RESPONSIVO
+   ========================================================= */
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu-principal');
+
+    if (hamburger && menu) {
+        hamburger.addEventListener('click', () => {
+            const aberto = menu.classList.toggle('aberto');
+            hamburger.classList.toggle('aberto', aberto);
+            hamburger.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+            hamburger.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
+        });
+
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    menu.classList.remove('aberto');
+                    hamburger.classList.remove('aberto');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    hamburger.setAttribute('aria-label', 'Abrir menu');
+                }
+            });
+        });
+    }
+});
+
+/* =========================================================
+   MONTE SEU TIME IDEAL (dreamteam_campeoes.html)
+   ========================================================= */
 function getSelectLabel(select) {
     let node = select.previousSibling;
 
@@ -97,7 +128,6 @@ function imprimirOpcao() {
     }
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const selects = document.querySelectorAll('select');
     selects.forEach(select => {
@@ -107,3 +137,82 @@ document.addEventListener('DOMContentLoaded', () => {
     atualizarOpcoesDuplicadas();
 });
 
+/* =========================================================
+   MONTE SUA CONVOCAÇÃO (sua_convocacao.html)
+   ========================================================= */
+function mostrarConvocacao() {
+    const categorias = [
+        { nome: 'Goleiros', prefixo: 'goleiro', quantidade: 3 },
+        { nome: 'Laterais', prefixo: 'lateral', quantidade: 4 },
+        { nome: 'Zagueiros', prefixo: 'zagueiro', quantidade: 4 },
+        { nome: 'Meias', prefixo: 'meia', quantidade: 6 },
+        { nome: 'Atacantes', prefixo: 'atacante', quantidade: 9 }
+    ];
+    const resultado = categorias.map(categoria => {
+        const jogadores = [];
+        for (let i = 1; i <= categoria.quantidade; i++) {
+            const campo = document.getElementById(categoria.prefixo + i);
+            const valor = campo ? campo.value.trim() : '';
+            jogadores.push(valor || `Jogador ${i}`);
+        }
+        return `
+            <section>
+                <h3>${categoria.nome}</h3>
+                <ol>
+                    ${jogadores.map(jogador => `<li>${jogador}</li>`).join('')}
+                </ol>
+            </section>`;
+    }).join('');
+    const convocacaoFinal = document.getElementById('convocacao-final');
+    if (convocacaoFinal) {
+        convocacaoFinal.innerHTML = resultado;
+        convocacaoFinal.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+/* =========================================================
+   QUIZ (quiz.html)
+   ========================================================= */
+function calculateScore() {
+    let score = 0;
+    const answers = {
+        q1: '5',
+        q2: 'Ronaldo',
+        q3: ['1950', '2014'],
+        q4: '1-2',
+        q5: '23',
+        q6: 'Ronaldo Fenômeno, com 8 gols',
+        q7: ['Pelé', 'Vavá'],
+        q8: '1970',
+        q9: 'Roberto Baggio',
+        q10: 'Mauro Ramos'
+    };
+
+    const resultDiv = document.getElementById('result');
+    if (!resultDiv) return;
+
+    for (let q in answers) {
+        const expected = answers[q];
+
+        if (Array.isArray(expected)) {
+            const selected = Array.from(document.querySelectorAll(`input[name="${q}"]:checked`)).map(el => el.value);
+            if (selected.length === expected.length && expected.every(value => selected.includes(value))) {
+                score++;
+            }
+        } else {
+            const selected = document.querySelector(`input[name="${q}"]:checked`);
+            if (selected && selected.value === expected) {
+                score++;
+            }
+        }
+    }
+
+    resultDiv.innerHTML = `Você acertou ${score} de 10 perguntas!`;
+    if (score === 10) {
+        resultDiv.innerHTML += ' Parabéns, você é um expert!';
+    } else if (score >= 6) {
+        resultDiv.innerHTML += ' Bom trabalho!';
+    } else {
+        resultDiv.innerHTML += ' Estude mais sobre o Brasil nas Copas!';
+    }
+}
