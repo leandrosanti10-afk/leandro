@@ -969,3 +969,8 @@ main {
     margin: 0 auto;
     padding: 1.5rem;
 }
+
+main img {
+    display: block;
+    margin: 16px auto;
+}
